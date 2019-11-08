@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Atendimento Suporte</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<style type="text/css">
+		.h5-center{
+			text-align: center;
+			border: 1px solid #dfe6e9;
+			border-width: 0 0 1px 0;
+			margin-bottom: 5%;
+		}
+		.grid{
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			margin: 0px;
+		}
+		.row .linha1{
+			display: flex;
+			justify-content: space-around;
+		}
+		.row .linha2{
+			display: flex;
+			justify-content: space-around;
+		}
+		.coluna-nastek{
+			display: grid;
+			grid-template-rows: 1fr 1fr;
+		}
+		.rem-centro{
+			grid-column-start: 1;
+			grid-column-end: 3;
+		}
+	</style>
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row cabecalho">
+			<a href="www.nastek.com.br/"><img src="./img/logo08.png" class="logo"></a>
+			<p><a href="https://suporte.nastek.com.br/">https://suporte.nastek.com.br/</a></p>
+		</div>
+		<div class="row">
+			<div class="col-md-2">
+				<ul id="nav">
+					<li><a href="index.html" >SDM Cliente</a></li>
+					<li><a href="emobile.html" >E-mobile SDM</a></li>
+					<li><a href="downloads.html" >Downloads</a></li>
+					<li><a href="suporte.html" id="marcacao">Atendimento Suporte</a></li>
+				</ul>
+			</div>
+			<div class="col-md-8 centro ">
+				<h2 class="titulo" style="font-size: 2.5em;">Atendimento Suporte</h2>
+				<hr>
+				<p style="margin-bottom: 1.3em; font-size: 1.5em;">Tem alguma dúvida? Dificuldades com a instalação? Erros? Basta entrar em contato conosco que iremos lhe auxiliar.</p>
+				<div class="row linha1" style="margin-bottom: 5%;">
+					<div class="col-md-4 coluna-nastek">
+						<h5 class="h5-center" style="margin-bottom: 35px; text-align: center;"><img src="./img/suporte/envelope.png" class="icone">Abra um chamado por aqui</h5>
+						<a href="mailto:ticket@nastek.com.br" id="remove" style="text-align: center;">ticket@nastek.com.br</a><!-- Abra um chamado por aqui-->
+					</div>
+					<div class="col-md-4 coluna-nastek">
+						<h5 class="h5-center" style="margin-bottom: 35px; "><img src="./img/suporte/envelope.png" class="icone">Entre em contato com o suporte</h5>
+						<a href="mailto:suporte@nastek.com.br" id="remove" style="text-align: center;">suporte@nastek.com.br</a> <!-- entre em contato com o suporte -->
+					</div>
+				</div>
+				<div class="row linha2">
+					<div class="col-md-4">
+						<h5 class="h5-center" style="margin-bottom: 35px;"><img src="./img/suporte/telefone.png" class="icone">Horário Comercial</h5>
+						<div class="grid">
+							<p id="remove">(67) 3043-8948</p>
+							<p id="remove">(67) 3043-8953</p>
+							<p id="remove" class="rem-centro"> 0800-742-8414</p>
+						</div>
+					</div>
+					<div class="col-md-5">
+						<h5 class="h5-center"><img src="./img/suporte/celular.png" class="icone">Plantão 24 horas</h5>
+						<div class="grid">
+							<p id="remove">(67) 99976-5926 <img src="./img/suporte/whatsapp.png" class="icone"></p> 
+							<p id="remove">(67) 99987-8763</p> 
+							<p id="remove">(67) 99858-9134</p> 
+							<p id="remove">(67) 98150-0119</p> 
+						</div>
+					</div>
+				</div>
+				
+
+			</div>
+		</div>
+		<div class="footer">
+			<p><a href="https://www.nastek.com.br/" >https://www.nastek.com.br/</a></p>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

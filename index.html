@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cliente SDM</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+
+	<style type="text/css">
+		.edit-img{
+			width: 40%;
+			height: 37%;
+			margin-bottom: 3em;
+		}
+		.con-centro{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+	</style>
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row cabecalho">
+			<a href="www.nastek.com.br/"><img src="./img/logo08.png" class="logo"></a>
+			<p><a href="https://suporte.nastek.com.br/">https://suporte.nastek.com.br/</a></p>
+		</div>
+		<div class="row">
+			<div class="col-md-2">
+				<ul id="nav">
+					<li><a href="index.html" id="marcacao">SDM Cliente</a></li>
+					<li><a href="emobile.html">E-mobile SDM</a></li>
+					<li><a href="downloads.html">Downloads</a></li>
+					<li><a href="suporte.html">Atendimento Suporte</a></li>
+				</ul>
+			</div>
+
+			<div class="col-md-8 centro" >
+				<h2 class="titulo" style="font-size: 2.5em;">SDM Cliente</h2>
+				<hr>
+				<ul class="nav nav-tabs" id="myTab" role="tablist">
+				  <li class="nav-item">
+				    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#instalacao" role="tab" aria-controls="home" aria-selected="true">Instalação</a>
+				  </li>
+				  <li class="nav-item">
+				    <a class="nav-link " id="profile-tab" data-toggle="tab" href="#desinstalacao" role="tab" aria-controls="profile" aria-selected="false">Desinstalação</a>
+				  </li>
+				  <li class="nav-item">
+				    <a class="nav-link " id="profile-tab" data-toggle="tab" href="#limpeza" role="tab" aria-controls="profile" aria-selected="false">Limpeza de cache do Mapa</a>
+				  </li>
+				</ul>
+				<div class="tab-content" id="myTabContent">
+				  	<div class="tab-pane fade show active" id="instalacao" role="tabpanel" aria-labelledby="home-tab">
+				  		<div class="con-centro">
+					  		<h4 style="margin-top: 1em; text-align: center; font-size: 2em;">Instalação</h4>
+					  		<p class="p-centro">Após o download da aplicação SDM Cliente, é necessário iniciar o processo de instalação. <br>
+					  			Clique em <b>Executar</b> e aplicação comerá a instalação.</p>
+					  		<img src="./img/sdm/instalar/SDMPASSO1.jpg" class="edit-img">
+					  		<br>
+
+					  		<p class="p-centro">Ao termino da instalação, uma mensagem de assinatura digital aparecerá pela primeira vez. <br> 
+					  			Marque a opção <b>EU ACEITO O RISCO E DESEJO EXECUTAR ESTA APLICAÇÃO</b> e clique em <b>Executar</b>.</p> <!-- <b> </b> -->
+					  		<img src="./img/sdm/instalar/SDMPASSO2.jpg" class="edit-img">
+					  		<br>
+
+					  		<p class="p-centro">Após o término da instalação, será gerado um ícone com o nome de "CLIENTE SDM" em sua área de trabalho. Execute o programa o novo programa.Em sua primeira inicialização, aparecerá uma tela de boas-vindas, clique em <b>PRÓXIMO</b>.</p>
+					  		<img src="./img/sdm/instalar/SDMPASSO3.jpg" class="edit-img">
+					  		<br>
+
+					  		<p class="p-centro">Na tela abaixo será feita a conexão com o banco de dados. Selecione a opção POSTGRESSQL e em servidor adicione o IP: <b>10.20.0.51 </b>PORTA: <b>5432</b> em nome do banco de dados coloque bd_sdm. Clique em SALVAR e depois <b>PRÓXIMO</b>.</p>
+					  		<img src="./img/sdm/instalar/SDMPASSO4.jpg" class="edit-img">
+					  		<br>
+
+					  		<p class="p-centro">Na tela abaixo, na guia geral, é configurada a conexão com o servidor de dados, Ip DataSever: <b>10.20.0.52</b>, Porta: <b>8914</b>. Clique em <b>Gravar</b>.</p>
+					  		<img src="./img/sdm/instalar/SDMPASSO5.jpg" height="280" width="370" style="margin-bottom: 2em; margin-top: 0;">
+
+					  		<p class="p-centro">Na guia <b>REDE</b>, deve-se atentar-se para o uso ou não do proxy. Contate o responsável pela rede local, para saber se há, 
+					  		<br> ou não, a necessidade da configuração. No campo Servidor Tomcat, Endereço do mapa, coloque: <b>http://10.20.0.52:8080/googleMapsV3</b>.
+					  		<br>Após inserir as configurações, clique em <b>GRAVAR</b> depois clique em <b>PRÓXIMO</b>. Caso não precise de Proxy, ignore a opção e deixe desabilitado</p>
+					  		<img src="./img/sdm/instalar/SDMPASSO6.jpg" class="edit-img">
+					  		<br>
+
+					  		<p class="p-centro">Clique em <b>Fim</b> para finalizar o processo de configuração do SDM Cliente.</p>
+					  		<img src="./img/sdm/instalar/SDMPASSO7.jpg" class="edit-img">
+					  		<br>
+
+					  		<p class="p-centro">Em alguns casos a mensagem abaixo irá aparecer novamente ao executar o programa. 
+					  			<br>Isso acontece, pois, o Java precisa adicionar uma permissão para que o programa possa ser iniciado. Conceda a Permissão.</p>
+					  		<img src="./img/sdm/instalar/SDMPASSO2.jpg" class="edit-img">
+					  		<br>
+
+					  		<p class="p-centro">Ao final, o aplicativo será instalado. <br>
+					  							Clique em <b>Abrir</b> para abrir o aplicativo.</p>
+					  		<img src="./img/sdm/instalar/SDMPASSO8.jpg" class="edit-img">
+					  		<br>
+					  	</div>
+				  	</div>
+
+
+				  	<div class="tab-pane fade" id="desinstalacao" role="tabpanel" aria-labelledby="profile-tab">
+				  		<div class="con-centro">
+					  		<h4 style="margin-top: 1em; text-align: center; font-size: 2em;">Desinstalação</h4>
+					  		<p class="p-centro">Para a desinstalação, abra o <b>Painel de Controle do Java</b> e clique em <b>Definições.</b>.</p>
+					  		<img src="./img/sdm/desinstalar/img01.png" class="edit-img">
+					  		<br>
+
+					  		<p class="p-centro">Desmarque o campo <b>Manter os arquivos temporários no meu computador</b> e clique em <b>Excluir Arquivos...</b>.</p>
+					  		<img src="./img/sdm/desinstalar/img02.png" class="edit-img">
+					  		<br>
+
+					  		<p class="p-centro">Deixe todos os campos selecionados e clique em <b>OK</b>.</p>
+					  		<img src="./img/sdm/desinstalar/img03.png" class="edit-img">
+					  		<br>
+
+					  		<p class="p-centro">Clique em <b>OK</b> novamente.</p>
+					  		<img src="./img/sdm/desinstalar/img02.png" class="edit-img">
+					  		<br>
+
+					  		<p class="p-centro">Clique em <b>OK</b> e <b>Aplicar</b>.</p>
+					  		<img src="./img/sdm/desinstalar/img01.png" class="edit-img">
+					  		<br>
+					  	</div>
+				  	</div>
+
+
+				  	<div class="tab-pane fade" id="limpeza" role="tabpanel" aria-labelledby="profile-tab">
+				  		<div class="con-centro">
+					  		<h4 style="margin-top: 1em; text-align: center; font-size: 2em;">Limpeza da Cache do Mapa</h4>
+					  		<p class="p-centro">Inicialmente, feche o <b>SDM Cliente</b>, abra o menu <b>Executar</b> (Windows + r) e pesquise <b>%temp%</b>.</p>
+					  		<img src="./img/sdm/limpar-cache/imagem01.png" class="edit-img">
+					  		<br>
+
+					  		<p class="p-centro">Procure e delete a pasta <b>jxbrowser-chromium</b>.</p>
+					  		<img src="./img/sdm/limpar-cache/imagem02.png" class="edit-img">
+					  		<br>
+
+					  		<p class="p-centro">Reabra o <b>SDM Cliente</b>.</p>
+					  	</div>
+				  	</div> 
+				</div>
+			</div>
+
+			</div>
+		</div>
+		<div class="footer">
+			<p><a href="https://www.nastek.com.br/">https://www.nastek.com.br/</a></p>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
